@@ -10,4 +10,66 @@
 
    -----------------------------------------------------------------------------------------------------
 
-   
+   Activity Lifecycle methods
+
+   Throughout its life, an Activity can be in one of the several states - active (i.e. running,paused or stopped).
+   The activity transitions between these states in response to various events:
+
+   1) An active Activity is visible on the screen and has the focus - that is it is in the foreground. You can interact
+      with the activity currently in the foreground.
+   2) A paused Activity is visible on the screen but does not have the focus - such as when an alertdialog is displayed.
+      You cannot interact with the paused activity until it becomes active - for example, after the user dismisses the
+      dialog.
+   3) A stopped activity is not visible on the screen - it is in the background and is likely to be killed by the system
+      when its memory is needed. An activity is stopped when another activity enters the foreground and becomes active.
+      For example, when you answer a phone call,the phone app becomes active and the app you previously used is stopped.
+
+   As an activity transitions among these states, the Android runtime calls various Activity lifecycle methods - all of which are
+   defined by the Activity class in package android.app
+   You will override the onCreate method in every activity.This method is called by the Android runtime when an Activity is starting -
+   that is, when its GUI is about to be displayed so you can interact with the activity. Other lifecycle methods include onStart,onPause,
+   onRestart,onResume,onStop and onDestroy. Each activity lifecycle method you override must call the superclass's version;otherwise
+   an exception will occur. This is required because each lifecycle method in superclass Activity contains code that must execute in addition to the
+   code you define in your overriden lifecycle methods.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+An EditText - often called a text box or text field in other GUI technologies is a subclass of TextView that can display Text and accept
+text input from the user. You will specify an EditText for numeric input,allow users to enter only digits and restrict the maximum digits that
+can be entered.
+
+A SeekBar represents an integer in the range 0 - 100 by default and allows the user to select a number in that range by moving the SeekBar's thumb.
+You will customise the SeekBar so that the user can choose a tip percentage from the more limited range 0 to 30.
+
+You will use the class NumberFormat (package java.text) to create local-specific currency and percentage strings - an important part of
+internationalising the apps. You also can add accessibility strings and internationalise the app's other text.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To respond to events when the user changes the text in this app's EditText, you will use an anonymous inner class to implement the TextWatcher interface
+(from package android.text). In particular, you will use the method on TextChanged to display the currency-formatted bill amount and to calculate the tip
+and total as the user enters each digit.
+
+You will also use another anonymous inner class to implement the SeekBar.OnSeekBarChangeListener interface (from package android.widget) to respond to the user
+moving the SeekBar's thumb. In particular, you will use the method onProgressChanged to display the selected tip percentage and to calculate the tip and total
+as the user moves the SeekBar's thumb.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+A theme gives an app look-and-feel that's consistent with Android. Projects that you create for Android 5 and higher use themes that adhere to the Google's material design
+guidelines. There are several predefined material design themes:
+
+1) The "light" theme has a white app bar, a white app background and text that is black or shades of dark grey.
+2) The "light" theme with a dark app bar is the same as above, but the app bar is black with white text by default.
+3) The "dark" theme has a black app bar, a dark gray app background and text that is white or shades of light grey.
+
+For each of these themes there is a
+
+1) A Theme.Material version (example Theme.Material.Light) for apps that do not use any AppCompat libraries and run on
+   Android 5 or higher.
+2) A Theme.AppCompat version (example Theme.AppCompat.Light) for apps that use AppCompat libraries and run on Android 2.1 or higher.
+
+
+
+
+

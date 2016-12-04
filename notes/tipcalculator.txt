@@ -69,7 +69,15 @@ For each of these themes there is a
    Android 5 or higher.
 2) A Theme.AppCompat version (example Theme.AppCompat.Light) for apps that use AppCompat libraries and run on Android 2.1 or higher.
 
+When designing a GUI, you can choose from the predefined themes, or even create new ones. In this chapter, we will use
+Theme.AppCompat.Light.DarkActionBAr,which is the default theme in Android studio's app templates.  Apps that use the AppCompat
+libraries must use one of the AppCompat themes; otherwise some views will not render correctly.
 
+-----------------------------------------------------------------------------------------------------------------------------
+Google's material design guidelines recommend that objects in your user interfaces cast shadows just as real-world objects do.
+When you set a view's elevation property, Android automatically casts a shadow for that view. Larger elevation values means
+pronounced shadows. For this app, we will set the elevation of the blue and orange TextViews that display monetary amounts.
 
-
-
+The material design guidelines contain elevation recommendations for various onscreen components - for example, a dialog's
+elevation is 24dp and a menu's is 8dp.
+-----------------------------------------------------------------------------------------------------------------------------

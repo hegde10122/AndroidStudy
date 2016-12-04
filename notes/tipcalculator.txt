@@ -87,3 +87,9 @@ more than three hues (shades) and an accent color. The primary colors typically 
 bar at the top of the screen and can also be used in your GUI. The accent color is used to tint variuos views in your GUI, such
 as SeekBars,CheckBoxes and RadioButtions. Once you choose a palette, you can choose Android Studio's Theme Editor to modify a
 theme's colors.
+-----------------------------------------------------------------------------------------------------------------------------
+
+The AndroidManifest.xml file is created by the IDE when you create a new app project. This file contains many of the settings
+that you specify in the Create New Project dialog - the app's name,the package name and Activity name(s) and more. You will edit
+this file's XML to add a new setting that forces the soft keyboard to be displayed when the app begins executing. You will also
+specify that the app supports only portrait orientation - that the device's longer dimension is vertical.

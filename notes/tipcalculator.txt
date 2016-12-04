@@ -81,3 +81,9 @@ pronounced shadows. For this app, we will set the elevation of the blue and oran
 The material design guidelines contain elevation recommendations for various onscreen components - for example, a dialog's
 elevation is 24dp and a menu's is 8dp.
 -----------------------------------------------------------------------------------------------------------------------------
+App developer's often customise a theme's colors to match a company's branding. If you need to customise theme colors, Google's
+material design guidelines for color recommendation that you choose a color palette consisting of a primary color - with no
+more than three hues (shades) and an accent color. The primary colors typically are used to color the status bar and the app
+bar at the top of the screen and can also be used in your GUI. The accent color is used to tint variuos views in your GUI, such
+as SeekBars,CheckBoxes and RadioButtions. Once you choose a palette, you can choose Android Studio's Theme Editor to modify a
+theme's colors.

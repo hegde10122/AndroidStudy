@@ -1,0 +1,13 @@
+1) Android apps have four types of executable components - activities,services,content providers
+   and broadcast receivers.
+2) In this app we will discuss about activities which are defined as subclasses of Activity
+   (package android.app).An app can have many activities, one of which is the first you see after launching the
+   app. You interact with Activity through views - GUI components that inherit from class View (package android.view).
+3) An activity can manage multiple Fragments. On a phone, each Fragment typically occupies the entire screen and the
+   Activity switches between fragments based on user interactions. On a tablet, activities typically display multiple
+   fragments per screen to take advantage of the larger screen size.
+
+
+   -----------------------------------------------------------------------------------------------------
+
+   

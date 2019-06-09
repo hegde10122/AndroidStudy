@@ -1,1 +1,3 @@
-include ':tipcalculatorapp'
+include ':sudoku'
+//include ':tipcalculatorapp'
+//include ':fusedlocationapp'
